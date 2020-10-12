@@ -1,7 +1,7 @@
 package com.personal.calendar.controller;
 
-import com.personal.calendar.bean.UserCalendar;
-import com.personal.calendar.service.CalendarService;
+//import com.personal.calendar.bean.UserCalendar;
+//import com.personal.calendar.service.CalendarService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,10 +10,10 @@ import java.util.Optional;
 
 @RestController
 @CrossOrigin(origins ="*")
-@RequestMapping("/cal")
+@RequestMapping("/")
 public class CalendarController {
-    @Autowired
-    private CalendarService remSer;
+//    @Autowired
+//    private CalendarService remSer;
 
     @RequestMapping("")
     @ResponseBody
