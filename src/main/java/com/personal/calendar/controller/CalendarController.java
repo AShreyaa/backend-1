@@ -14,6 +14,14 @@ import java.util.Optional;
 public class CalendarController {
     @Autowired
     private CalendarService remSer;
+
+    @RequestMapping("")
+    @ResponseBody
+    String home() {
+        return "Hello World!";
+    }
+
+
     @PostMapping(value = "/save")
    void save(@RequestBody UserCalendar cal){
         remSer.save(cal);
