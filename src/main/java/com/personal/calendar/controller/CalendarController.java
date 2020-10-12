@@ -11,10 +11,6 @@ import java.util.Optional;
 @RestController
 @CrossOrigin(origins ="*")
 @RequestMapping("/cal")
-@ResponseBody
-    String home() {
-      return "Hello World!";
-    }
 public class CalendarController {
     @Autowired
     private CalendarService remSer;
